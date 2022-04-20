@@ -8,8 +8,8 @@ def update_params():
 
 query_params = st.experimental_get_query_params()
 
-if query_params and query_params["yt"][0] not in st.session_state:
-    st.session_state.yt = query_params["yt"][0]
+if 'yt' not in st.session_state:
+    st.session_state.yt = query_params['yt'][0]
 
     
 # Image settings
