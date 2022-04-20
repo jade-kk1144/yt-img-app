@@ -10,7 +10,7 @@ query_params = st.experimental_get_query_params()
 
 if 'yt' not in st.session_state:
     st.session_state.yt = ''
-
+st.info(st.session_state.yt)
     
 # Image settings
 st.sidebar.header('Settings')
@@ -22,7 +22,7 @@ yt_url = st.text_input('Paste YouTube URL', 'https://youtu.be/DctmeFx8s_k', key=
 
 
 # Retrieving YouTube video ID from URL
-yt = st.experimental_get_query_params()['yt'][0]
+#yt = st.experimental_get_query_params()['yt'][0]
 
 def get_ytid(input_url):
   if 'youtu.be' in input_url:
