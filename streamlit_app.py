@@ -6,6 +6,12 @@ st.title('st.experimental_get_query_params')
 def update_params():
     st.experimental_set_query_params(yt=st.session_state.yt)
 
+query_params = st.experimental_get_query_params()
+
+if query_params and query_params["yt"][0] not in st.session_state:
+    st.session_state.yt = query_params["yt"][0]
+
+    
 # Image settings
 st.sidebar.header('Settings')
 img_dict = {'Max': 'maxresdefault', 'High': 'hqdefault', 'Medium': 'mqdefault', 'Standard': 'sddefault'}
