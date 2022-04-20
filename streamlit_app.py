@@ -19,10 +19,10 @@ yt = st.experimental_get_query_params()['yt'][0]
 if yt is not None:
   if 'youtu.be' in yt:
     ytid = yt.split('/')[-1]
-    st.write(ytid)
+    st.write('YouTube video ID', ytid)
   if 'youtube.com' in yt:
     ytid = yt.split('=')[-1]
-    st.write(ytid)
+    st.write('YouTube video ID', ytid)
 
   # Display YouTube thumbnail image
   yt_img = f'http://img.youtube.com/vi/{ytid}/{img_quality}.jpg'
