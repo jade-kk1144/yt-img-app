@@ -8,10 +8,10 @@ img_dict = {'Max': 'maxresdefault', 'High': 'hqdefault', 'Medium': 'mqdefault', 
 selected_img_quality = st.sidebar.selectbox('Select image quality', ['Max', 'High', 'Medium', 'Standard'])
 img_quality = img_dict[selected_img_quality]
 
-#yt_url = st.text_input('Paste YouTube URL', 'https://youtu.be/DctmeFx8s_k')
+yt_url = st.text_input('Paste YouTube URL', 'https://youtu.be/DctmeFx8s_k')
 
 # Retrieving YouTube video ID from URL
-yt = st.experimental_get_query_params()['yt'][0]
+#yt = st.experimental_get_query_params()['yt'][0]
 
 def get_ytid(input_url):
   if 'youtu.be' in input_url:
