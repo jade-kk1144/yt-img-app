@@ -2,6 +2,7 @@ import streamlit as st
 
 st.title(st.experimental_get_query_params)
 
+st.header('Query text from URL')
 st.write(st.experimental_get_query_params())
 
 # Image settings
@@ -10,6 +11,7 @@ img_dict = {'Max': 'maxresdefault', 'High': 'hqdefault', 'Medium': 'mqdefault', 
 selected_img_quality = st.sidebar.selectbox('Select image quality', ['Max', 'High', 'Medium', 'Standard'])
 img_quality = img_dict[selected_img_quality]
 
+st.header('Applying query text from URL')
 # Retrieving YouTube video ID from URL
 yt = st.experimental_get_query_params()['yt'][0]
 
