@@ -30,4 +30,4 @@ if yt_url != '':
   st.image(yt_img)
   st.write('YouTube video thumbnail image URL: ', yt_img)
 else:
-  st.write('Enter URL to continue ...')
+  st.write('☝️ Enter URL to continue ...')
