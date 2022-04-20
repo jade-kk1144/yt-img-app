@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title(st.experimental_get_query_params)
+st.title('st.experimental_get_query_params')
 
 st.header('Query text from URL')
 st.write(st.experimental_get_query_params())
