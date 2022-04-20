@@ -2,6 +2,9 @@ import streamlit as st
 
 st.title('st.experimental_get_query_params')
 
+with st.expander('About this app'):
+  st.write('This app retrieves the thumbnail image from a YouTube video.')
+  
 # Image settings
 st.sidebar.header('Settings')
 img_dict = {'Max': 'maxresdefault', 'High': 'hqdefault', 'Medium': 'mqdefault', 'Standard': 'sddefault'}
