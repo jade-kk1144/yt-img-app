@@ -11,4 +11,4 @@ if 'youtube.com' in yt:
   ytid = yt.split('=')[-1]
   st.write(ytid)
   
-st.write(f'http://img.youtube.com/vi/{ytid}/0.jpg')
+st.write(f'http://img.youtube.com/vi/{ytid}/maxresdefault.jpg')
