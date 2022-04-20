@@ -14,3 +14,5 @@ selected_day = st.selectbox('Start the Challenge 👇', days_list, key="day", on
 for i in days_list:
     if selected_day == i:
         st.markdown(f'# 🗓️ {i}')
+
+st.write(st.session_state.day
