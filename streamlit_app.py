@@ -23,9 +23,10 @@ def get_ytid(input_url):
   return ytid
     
 # Display YouTube thumbnail image
+ytid = get_ytid(yt)
+
 yt_img = f'http://img.youtube.com/vi/{ytid}/{img_quality}.jpg'
 st.image(yt_img)
 st.write('YouTube video thumbnail image URL: ', yt_img)
 
-st.write(get_ytid(yt))
 st.write(st.experimental_get_query_params)
