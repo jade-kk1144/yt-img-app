@@ -5,7 +5,7 @@ st.write(st.experimental_get_query_params())
 yt = st.experimental_get_query_params()['yt'][0]
 
 if yt.startswith('https://youtu.be/'):
-  str = yt.split('https://youtu.be/')[0]
+  str = yt.split('/')
   st.write(str)
 else:
   str = yt.split('=')[0]
