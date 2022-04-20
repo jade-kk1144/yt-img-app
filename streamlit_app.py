@@ -7,6 +7,8 @@ days_list = [f'Day {x}' for x in [1,2,3,4,5]]
 
 query_params = st.experimental_get_query_params()
 
+st.write(query_params)
+
 if query_params and query_params["challenge"][0] in days_list:
     st.session_state.day = query_params["challenge"][0]
 
@@ -15,4 +17,5 @@ for i in days_list:
     if selected_day == i:
         st.markdown(f'# 🗓️ {i}')
 
+st.write(query_params)
 st.write('st.session_state.day: ', st.session_state.day)
