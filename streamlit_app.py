@@ -15,17 +15,16 @@ st.header('Applying query text from URL')
 # Retrieving YouTube video ID from URL
 yt = st.experimental_get_query_params()['yt'][0]
 
-st.write(yt)
+if yt != '':
+  if 'youtu.be' in yt:
+    ytid = yt.split('/')[-1]
+    st.write(ytid)
+  if 'youtube.com' in yt:
+    ytid = yt.split('=')[-1]
+    st.write(ytid)
 
-if 'youtu.be' in yt:
-  ytid = yt.split('/')[-1]
-  st.write(ytid)
-if 'youtube.com' in yt:
-  ytid = yt.split('=')[-1]
-  st.write(ytid)
+  # Display YouTube thumbnail image
+  yt_img = f'http://img.youtube.com/vi/{ytid}/{img_quality}.jpg'
 
-# Display YouTube thumbnail image
-yt_img = f'http://img.youtube.com/vi/{ytid}/{img_quality}.jpg'
-
-st.image(yt_img)
-st.write(yt_img)
+  st.image(yt_img)
+  st.write(yt_img)
