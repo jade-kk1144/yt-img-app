@@ -16,17 +16,16 @@ yt = st.experimental_get_query_params()['yt'][0]
 def get_yt_img(input_url):
   if 'youtu.be' in input_url:
     ytid = input_url.split('/')[-1]
-    st.write('YouTube video ID: ', ytid)
+    #st.write('YouTube video ID: ', ytid)
   if 'youtube.com' in input_url:
     ytid = input_url.split('=')[-1]
-    st.write('YouTube video ID: ', ytid)
+    #st.write('YouTube video ID: ', ytid)
+  return ytid
+    
+# Display YouTube thumbnail image
+yt_img = f'http://img.youtube.com/vi/{ytid}/{img_quality}.jpg'
+st.image(yt_img)
+st.write('YouTube video thumbnail image URL: ', yt_img)
 
-  # Display YouTube thumbnail image
-  yt_img = f'http://img.youtube.com/vi/{ytid}/{img_quality}.jpg'
-  st.image(yt_img)
-  st.write('YouTube video thumbnail image URL: ', yt_img)
-
-get_ytid_img(yt)
-
-st.write(yt)
+st.write(get_ytid_img(yt))
 st.write(st.experimental_get_query_params)
