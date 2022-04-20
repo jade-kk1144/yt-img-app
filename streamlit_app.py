@@ -13,7 +13,7 @@ yt_url = st.text_input('Paste YouTube URL', 'https://youtu.be/DctmeFx8s_k')
 # Retrieving YouTube video ID from URL
 yt = st.experimental_get_query_params()['yt'][0]
 
-def get_yt_img(input_url):
+def get_ytid(input_url):
   if 'youtu.be' in input_url:
     ytid = input_url.split('/')[-1]
     #st.write('YouTube video ID: ', ytid)
@@ -27,5 +27,5 @@ yt_img = f'http://img.youtube.com/vi/{ytid}/{img_quality}.jpg'
 st.image(yt_img)
 st.write('YouTube video thumbnail image URL: ', yt_img)
 
-st.write(get_ytid_img(yt))
+st.write(get_ytid(yt))
 st.write(st.experimental_get_query_params)
