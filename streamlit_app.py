@@ -23,8 +23,11 @@ def get_ytid(input_url):
   return ytid
     
 # Display YouTube thumbnail image
-ytid = get_ytid(yt_url) # yt or yt_url
+if yt_url != '':
+  ytid = get_ytid(yt_url) # yt or yt_url
 
-yt_img = f'http://img.youtube.com/vi/{ytid}/{img_quality}.jpg'
-st.image(yt_img)
-st.write('YouTube video thumbnail image URL: ', yt_img)
+  yt_img = f'http://img.youtube.com/vi/{ytid}/{img_quality}.jpg'
+  st.image(yt_img)
+  st.write('YouTube video thumbnail image URL: ', yt_img)
+else:
+  st.write('Enter URL to continue ...')
