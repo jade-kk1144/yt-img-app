@@ -15,7 +15,7 @@ st.header('Applying query text from URL')
 # Retrieving YouTube video ID from URL
 yt = st.experimental_get_query_params()['yt'][0]
 
-st.write(yt is None)
+st.write(yt == '')
 
 if yt != '':
   if 'youtu.be' in yt:
