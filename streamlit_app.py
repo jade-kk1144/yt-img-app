@@ -27,4 +27,6 @@ def get_yt_img(input_url):
   st.write('YouTube video thumbnail image URL: ', yt_img)
 
 get_ytid_img(yt)
+
+st.write(yt)
 st.write(st.experimental_get_query_params)
