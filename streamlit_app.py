@@ -15,9 +15,8 @@ st.header('Applying query text from URL')
 # Retrieving YouTube video ID from URL
 yt = st.experimental_get_query_params()['yt'][0]
 
-st.write(yt == {})
 
-if yt != '':
+if yt != {}:
   if 'youtu.be' in yt:
     ytid = yt.split('/')[-1]
     st.write(ytid)
@@ -30,3 +29,5 @@ if yt != '':
 
   st.image(yt_img)
   st.write(yt_img)
+else:
+  st.write('Awaiting')
