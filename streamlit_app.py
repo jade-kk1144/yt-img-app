@@ -30,3 +30,6 @@ st.image(yt_img)
 st.write('YouTube video thumbnail image URL: ', yt_img)
 
 st.write(st.experimental_get_query_params)
+
+st.write('yt: ', yt)
+st.write('yt_url: ', yt_url)
