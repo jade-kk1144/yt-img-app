@@ -16,7 +16,7 @@ st.header('Applying query text from URL')
 yt = st.experimental_get_query_params()['yt'][0]
 
 
-if yt != {}:
+if yt is not None:
   if 'youtu.be' in yt:
     ytid = yt.split('/')[-1]
     st.write(ytid)
