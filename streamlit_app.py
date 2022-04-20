@@ -28,6 +28,6 @@ if yt is not None:
   yt_img = f'http://img.youtube.com/vi/{ytid}/{img_quality}.jpg'
 
   st.image(yt_img)
-  st.write(yt_img)
+  st.write('YouTube video thumbnail image URL: ', yt_img)
 else:
   st.write('Awaiting')
