@@ -1,3 +1,3 @@
 import streamlit as st
 
-st.experimental_get_query_params()
+st.write(st.experimental_get_query_params())
