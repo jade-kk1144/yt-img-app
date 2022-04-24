@@ -1,6 +1,7 @@
 import streamlit as st
 
-st.title('🖼️ yt-img-app: YouTube Thumbnail Image Extractor App')
+st.title('🖼️ yt-img-app')
+st.header('YouTube Thumbnail Image Extractor App')
 
 with st.expander('About this app'):
   st.write('This app retrieves the thumbnail image from a YouTube video.')
