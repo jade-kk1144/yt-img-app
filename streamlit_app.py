@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title('st.experimental_get_query_params')
+st.title('YouTube Thumbnail Image Extractor App')
 
 with st.expander('About this app'):
   st.write('This app retrieves the thumbnail image from a YouTube video.')
