@@ -43,10 +43,8 @@ yt_url = st.text_input('Paste YouTube URL', 'https://youtu.be/JwSS70SZdyM')
 def get_ytid(input_url):
   if 'youtu.be' in input_url:
     ytid = input_url.split('/')[-1]
-    #st.write('YouTube video ID: ', ytid)
   if 'youtube.com' in input_url:
     ytid = input_url.split('=')[-1]
-    #st.write('YouTube video ID: ', ytid)
   return ytid
     
 # Display YouTube thumbnail image
