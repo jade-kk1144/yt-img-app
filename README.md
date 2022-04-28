@@ -1,12 +1,28 @@
 # yt-img-app
 
-`yt-img-app` is a Streamlit app that can extract thumbnail images from YouTube videos. 
+Today's Day 30 of the #30DaysOfStreamlit challenge. Congratulations on making this far in the challenge.
 
-As a content creator, this may come in handy for social promotion or content creation.
+In this tutorial, we're going to put our newfound knowledge from this learning challenge to create Streamlit apps to solve real-world problem.
+
+## Real-world problem
+
+As a content creator, having access to thumbnail images from YouTube videos are useful resources for social promotion and content creation.
+
+Let's figure out how we're going to tackle this problem and build a Streamlit app.
+
+## Solution
+
+Today, we're going to build `yt-img-app`, which is a Streamlit app that can extract thumbnail images from YouTube videos.
+
+In a nutshell, here's the 3 simple steps that we want the Streamlit app to do:
+
+1. Accept a YouTube URL as input from users
+2. Perform text processing of the URL to extract the unique YouTube video ID
+3. Use the YouTube video ID as an input to a custom function that retrieves and displays the thumbnail image from YouTube videos
 
 ## Instructions
 
-To get started, copy and paste a YouTube URL into the input text box.
+To get started in using the Streamlit app, copy and paste a YouTube URL into the input text box.
 
 ## Demo app
 
@@ -102,4 +118,8 @@ else:
   st.write('☝️ Enter URL to continue ...')
 ```
 
-Hope you enjoyed this tutorial!
+## Summary
+
+In summary, we have seen that in the creation of any Streamlit app, we normally start by first identifying and defining the problem. Next, we devise a solution to tackle the problem by breaking it down into the granular steps, which we implement in the Streamlit app. Here, we also have to determine which data or information that we need as input from users, the approach and method to use in processing the user input in order to produce the final desired output.
+
+Hope you enjoyed this tutorial, Happy Streamlit-ing!
