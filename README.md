@@ -1,4 +1,4 @@
-# The Art of Creating Streamlit apps
+# The Art of Creating Streamlit Apps
 
 Today's Day 30 of the *#30DaysOfStreamlit* challenge. Congratulations on making this far in the challenge.
 
