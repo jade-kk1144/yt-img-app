@@ -1,4 +1,4 @@
-# yt-img-app
+# The Art of Creating Streamlit apps
 
 Today's Day 30 of the *#30DaysOfStreamlit* challenge. Congratulations on making this far in the challenge.
 
@@ -120,6 +120,8 @@ else:
 
 ## Summary
 
-In summary, we have seen that in the creation of any Streamlit app, we normally start by first identifying and defining the problem. Next, we devise a solution to tackle the problem by breaking it down into the granular steps, which we implement in the Streamlit app. Here, we also have to determine which data or information that we need as input from users, the approach and method to use in processing the user input in order to produce the final desired output.
+In summary, we have seen that in the creation of any Streamlit app, we normally start by first identifying and defining the problem. Next, we devise a solution to tackle the problem by breaking it down into the granular steps, which we implement in the Streamlit app. 
+
+Here, we also have to determine which data or information that we need as input from users, the approach and method to use in processing the user input in order to produce the final desired output.
 
 Hope you enjoyed this tutorial, Happy Streamlit-ing!
