@@ -1,6 +1,6 @@
 # yt-img-app
 
-Today's Day 30 of the #30DaysOfStreamlit challenge. Congratulations on making this far in the challenge.
+Today's Day 30 of the *#30DaysOfStreamlit* challenge. Congratulations on making this far in the challenge.
 
 In this tutorial, we're going to put our newfound knowledge from this learning challenge to create Streamlit apps to solve real-world problem.
 
